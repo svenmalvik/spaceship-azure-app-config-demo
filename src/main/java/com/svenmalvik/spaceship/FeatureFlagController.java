@@ -4,18 +4,16 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
-
 import com.microsoft.azure.spring.cloud.feature.manager.*;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Controller
 @ConfigurationProperties
-public class HelloController {
+public class FeatureFlagController {
 
     private FeatureManager featureManager;
 
-    public HelloController(FeatureManager featureManager) {
+    public FeatureFlagController(FeatureManager featureManager) {
         this.featureManager = featureManager;
     }
 
