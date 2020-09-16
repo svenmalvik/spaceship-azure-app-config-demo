@@ -23,20 +23,18 @@ public class MyController {
     }
 
     @GetMapping(value = {"", "/", "/welcome"})
-    public String mainWithParam(Model model) {
-        model.addAttribute("beta", featureManager.isEnabledAsync("featureManagement.beta").block());
+    public String welcome() {
         return "welcome";
     }
 
     @GetMapping("/beta")
-    public String mainWithParam2(Model model) {
-        model.addAttribute("message", properties.getMessage());
-        model.addAttribute("beta", featureManager.isEnabledAsync("featureManagement.beta").block());
+    public String beta() {
         return "beta";
     }
 
     @ModelAttribute
     public void addAttributes(Model model) {
+        model.addAttribute("beta", featureManager.isEnabledAsync("featureManagement.beta").block());
         model.addAttribute("message", properties.getMessage());
     }
 }
