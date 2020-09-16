@@ -24,9 +24,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="welcome">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="welcome">Welcome <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item" th:if="${Beta}">
+            <li class="nav-item" th:if="${beta}">
             <a class="nav-link" href="beta">Beta</a>
             </li>
         </ul>
@@ -34,8 +34,7 @@
     </nav>
     </header>
     <div class="container body-content">
-        <h1 class="mt-5">The future is on its way.</h1>
+        <h1 class="mt-5" th:text="${message}"></h1>
     </div>
-
 </body>
 </html>
