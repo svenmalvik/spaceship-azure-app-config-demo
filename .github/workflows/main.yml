@@ -19,5 +19,6 @@ jobs:
           configurationFile: 'prod.properties'
           format: 'properties'
           # Replace <ConnectionString> with the name of the secret in your repository
-          connectionString: "Endpoint=https://appc-ws.azconfig.io;Id=djJi-l9-s0:WXVWFymST+TmQLa+w/oo;Secret=meYr7nxvIgS3tqz1SBVXIkoJsAfYbD7bdvclVzC5G2c="
+          connectionString: "Endpoint=https://apim-config-appc.azconfig.io;Id=vN/j-l9-s0:VJ22Hp5X74HP9IfiNInI;Secret=fmnAODZ45vrBGLc1sF0ed5CrwLR9Ix9ZK0rhSkP1nlI="
           separator: '.'
+          prefix: 'config'
