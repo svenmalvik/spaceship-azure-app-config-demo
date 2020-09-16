@@ -1,3 +1,6 @@
-Add feature flag to your Azure App Configuration service called `beta`.
+https://www.svenmalvik.com/azure-appconfiguration-feature-flags/
 
-`mvn clean install && mvn spring-boot:run`
+- Create Azure App Configuration
+- `export APP_CONFIGURATION_CONNECTION_STRING=...`
+- Add feature flag to your Azure App Configuration service called `beta`.
+- `mvn clean install && mvn spring-boot:run`
