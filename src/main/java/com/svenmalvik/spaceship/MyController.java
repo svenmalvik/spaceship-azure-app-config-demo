@@ -4,9 +4,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
+// Azure /////////////////////////////////////////////////
 import com.microsoft.azure.spring.cloud.feature.manager.*;
-import org.springframework.web.bind.annotation.GetMapping;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.beans.factory.annotation.Autowired;
 
